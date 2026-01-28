@@ -8,14 +8,23 @@ function addToCart(name, price) {
 
 function displayCart() {
   let cartItems = document.getElementById("cart-items");
-  let total = 0;
+  let totalElement = document.getElementById("total");
+
+  if (!cartItems || !totalElement) return;
+
   cartItems.innerHTML = "";
+  let total = 0;
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = "<p>Your cart is empty</p>";
+    totalElement.innerText = "";
+    return;
+  }
 
   cart.forEach(item => {
     cartItems.innerHTML += `<p>${item.name} - ₹${item.price}</p>`;
     total += item.price;
   });
 
-  document.getElementById("total").innerText = "Total: ₹" + total;
+  totalElement.innerText = "Total: ₹" + total;
 }
-
