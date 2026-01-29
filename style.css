@@ -77,6 +77,13 @@ nav a {
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover,
+.product button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /* SEARCH */
