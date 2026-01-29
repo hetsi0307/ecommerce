@@ -5,34 +5,38 @@
   <title>Products</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="updateCartCount()">
 
 <header>
   <h1>Products</h1>
   <nav>
     <a href="index.html">Home</a>
-    <a href="cart.html">Cart 🛒</a>
+    <a href="cart.html">Cart 🛒 <span id="cart-count" class="badge">0</span></a>
   </nav>
 </header>
 
-<section class="products">
+<div class="search-box">
+  <input type="text" placeholder="Search products..." onkeyup="searchProduct(this.value)">
+</div>
+
+<section class="products" id="product-list">
 
   <div class="product">
-    <img src="images/phone.jpg" alt="Smart Phone">
+    <img src="images/phone.jpg">
     <h3>Smart Phone</h3>
     <p>₹15,000</p>
     <button onclick="addToCart('Smart Phone',15000)">Add to Cart</button>
   </div>
 
   <div class="product">
-    <img src="images/laptop.jpg" alt="Laptop">
+    <img src="images/laptop.jpg">
     <h3>Laptop</h3>
     <p>₹45,000</p>
     <button onclick="addToCart('Laptop',45000)">Add to Cart</button>
   </div>
 
   <div class="product">
-    <img src="images/headphones.jpg" alt="Headphones">
+    <img src="images/headphones.jpg">
     <h3>Headphones</h3>
     <p>₹2,000</p>
     <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
