@@ -5,23 +5,19 @@
   <title>Cart</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="displayCart(); updateCartCount();">
 
 <header>
   <h1>Your Cart</h1>
   <nav>
-    <a href="products.html">Back to Products</a>
+    <a href="products.html">Products</a>
   </nav>
 </header>
 
-<section id="cart-items"></section>
-
+<div id="cart-items"></div>
 <h2 id="total"></h2>
+<button class="clear-btn" onclick="clearCart()">Clear Cart</button>
 
 <script src="script.js"></script>
-<script>
-  displayCart();
-</script>
-
 </body>
 </html>
