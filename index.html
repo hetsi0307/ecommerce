@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple E-Commerce</title>
+  <title>MyShop</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="updateCartCount()">
 
 <header>
   <h1>MyShop</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
-    <a href="cart.html">Cart 🛒</a>
+    <a href="cart.html">Cart 🛒 <span id="cart-count" class="badge">0</span></a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Welcome to MyShop</h2>
-  <p>Best products at best prices</p>
-  <a href="products.html" class="btn">Shop Now</a>
+  <div class="hero-content">
+    <h2>Future of Shopping</h2>
+    <p>Premium tech products with next-gen design.</p>
+    <a href="products.html" class="btn">Explore Products</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 MyShop | Internship Project</p>
+  © 2026 MyShop | Advanced Frontend E-Commerce
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
