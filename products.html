@@ -1,20 +1,45 @@
-<div class="product">
-  <img src="images/phone.jpg">
-  <h3>Smart Phone</h3>
-  <p>₹15,000</p>
-  <button onclick="addToCart('Smart Phone',15000)">Add to Cart</button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="product">
-  <img src="images/laptop.jpg">
-  <h3>Laptop</h3>
-  <p>₹45,000</p>
-  <button onclick="addToCart('Laptop',45000)">Add to Cart</button>
-</div>
+<header>
+  <h1>Products</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart 🛒</a>
+  </nav>
+</header>
 
-<div class="product">
-  <img src="images/headphones.jpg">
-  <h3>Headphones</h3>
-  <p>₹2,000</p>
-  <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
-</div>
+<section class="products">
+
+  <div class="product">
+    <img src="images/phone.jpg" alt="Smart Phone">
+    <h3>Smart Phone</h3>
+    <p>₹15,000</p>
+    <button onclick="addToCart('Smart Phone',15000)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="images/laptop.jpg" alt="Laptop">
+    <h3>Laptop</h3>
+    <p>₹45,000</p>
+    <button onclick="addToCart('Laptop',45000)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="images/headphones.jpg" alt="Headphones">
+    <h3>Headphones</h3>
+    <p>₹2,000</p>
+    <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
